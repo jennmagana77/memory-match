@@ -1,3 +1,24 @@
+body {
+  background-image: url(./assets/rainbowspace.jpg);
+  background-size: cover;
+  height: 97vh;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-family: 'Audiowide';
+  font-size: 40px;
+  text-shadow: 2px 1px black;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
 .modal-overlay {
   position: fixed;
   display: flex;
@@ -9,26 +30,13 @@
 }
 
 .modal-content {
-  text-align: center;
   background-color: rgb(78, 163, 243);
-  border: dashed 10px rgb(234, 238, 9);
-  margin-bottom: 5rem;
+  text-align: center;
+  margin-left: 20px;
   padding: 50px;
-}
-
-button {
-  font-size: 2rem;
-  padding: 10px;
-  background-color: yellow;
-  border: solid 1px black;
+  border: solid 1px whitesmoke;
+  background-image: url(./assets/lostinspace.jpg);
   font-family: 'Expletus Sans';
-}
-
-.container {
-  height: 100%;
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
 }
 
 .row {
@@ -38,16 +46,6 @@ button {
   margin-bottom: .5rem;
 }
 
-body {
-  background-image: url(./assets/images/lfz-background.jpg);
-  background-size: cover;
-  height: 97vh;
-  background-repeat: no-repeat;
-}
-
-h1 {
-  font-size: 3rem;
-}
 
 aside {
   display: flex;
@@ -69,13 +67,23 @@ aside > div {
   width: 55%;
   margin: 4px;
   padding: 20px;
-  background-color: #8aceea;
+  background-color: rgb(218, 124, 188);
   text-align: center;
-  height: 40px;
+  border-radius: 5px;
+  font-family: 'Audiowide';
+  border: solid 3px white;
+  opacity: .8;
+}
+
+button {
+  padding: 10px;
+  font-size: 3rem;
+  background: none;
+  border: solid 5px white;
+  font-family: 'Expletus Sans';
 }
 
 .card {
-  background-image: url(./assets/images/lfz-card.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 5px 0;
@@ -89,46 +97,52 @@ aside > div {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  border: solid 1px whitesmoke;
+  border-radius: 2px;
 }
 
 .card-back {
-  background-image: url(./assets/images/lfz-card.jpg)
+  border: solid 2px black;
+}
+
+.card-back {
+  background-image: url(./assets/nebula3.jpg)
 }
 
 .css-logo {
-  background-image: url(./assets/images/css-logo.png)
+  background-image: url(./assets/earth.jpg)
 }
 
 .docker-logo {
-  background-image: url(./assets/images/docker-logo.jpg)
+  background-image: url(./assets/jupiter.jpg)
 }
 
 .github-logo {
-  background-image: url(./assets/images/gitHub-logo.png)
+  background-image: url(./assets/mars.jpg)
 }
 
 .html-logo {
-  background-image: url(./assets/images/html-logo.png)
+  background-image: url(./assets/mercury.jpg)
 }
 
 .js-logo {
-  background-image: url(./assets/images/js-logo.png)
+  background-image: url(./assets/moon.jpg)
 }
 
 .mysql-logo {
-  background-image: url(./assets/images/mysql-logo.jpg)
+  background-image: url(./assets/neptune.jpg)
 }
 
 .node-logo {
-  background-image: url(./assets/images/node-logo.png)
+  background-image: url(./assets/saturn.jpg)
 }
 
 .php-logo {
-  background-image: url(./assets/images/php-logo.jpeg)
+  background-image: url(./assets/venus.png)
 }
 
 .react-logo {
-  background-image: url(./assets/images/react-logo.png)
+  background-image: url(./assets/uranus.jpg)
 }
 
 .col-1 {
