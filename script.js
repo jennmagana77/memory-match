@@ -1,6 +1,8 @@
 var gameCards = document.getElementById("gameCards");
 gameCards.addEventListener("click", handleClick);
 
+var modalElement = document.getElementById("modal");
+
 var firstCardClicked;
 var secondCardClicked;
 var firstCardClasses;
@@ -11,7 +13,6 @@ var matches = 0;
 
 var attempts = 0;
 var gamesPlayed = 0;
-
 
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
@@ -31,17 +32,16 @@ function handleClick(event) {
       gameCards.addEventListener("click", handleClick);
       firstCardClicked = null;
       secondCardClicked = null;
-      matches++
-      attempts++
+      matches++;
+      attempts++;
       displayStats()
       if (maxMatches === matches) {
-        var modalElement = document.getElementById("modal");
         modalElement.classList.remove("hidden");
       }
     } else {
-      setTimeout(hideCards, 1500)
-      attempts++
-      displayStats()
+      setTimeout(hideCards, 1500);
+      attempts++;
+      displayStats();
     }
   }
 }
@@ -57,9 +57,30 @@ function hideCards() {
 function displayStats() {
   document.getElementById("userGames").textContent = gamesPlayed;
   document.getElementById("userAttempts").textContent = attempts;
-  document.getElementById("userAccuracy").textContent = calculateAccuracy(attempts, matches)
+  document.getElementById("userAccuracy").textContent = calculateAccuracy(attempts, matches);
 }
 
 function calculateAccuracy(attempts, matches) {
+  if (attempts === 0) {
+    return 0 + "%";
+  }
   return Math.trunc((matches / attempts) * 100) + "%";
 }
+
+function resetGame() {
+  matches = 0;
+  attempts = 0;
+  gamesPlayed++
+  displayStats();
+  resetCards();
+  modalElement.classList.add("hidden");
+}
+
+function resetCards() {
+  var hiddenCards = document.querySelectorAll(".card-back");
+  for (var index = 0; index < hiddenCards.length; index++) {
+    hiddenCards[index].classList.remove("hidden");
+  }
+}
+var resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", resetGame);
