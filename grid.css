@@ -16,6 +16,14 @@
   padding: 50px;
 }
 
+button {
+  font-size: 2rem;
+  padding: 10px;
+  background-color: yellow;
+  border: solid 1px black;
+  font-family: 'Expletus Sans';
+}
+
 .container {
   height: 100%;
   width: 100%;
