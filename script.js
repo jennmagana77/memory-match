@@ -14,6 +14,29 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
+var cardClasses = [
+  "react-logo",
+  "css-logo",
+  "docker-logo",
+  "github-logo",
+  "html-logo",
+  "js-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",
+  "react-logo",
+  "css-logo",
+  "docker-logo",
+  "github-logo",
+  "html-logo",
+  "js-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",]
+
+var cardFrontClass = document.getElementsByClassName("card-front");
+
+
 function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
@@ -73,6 +96,7 @@ function resetGame() {
   gamesPlayed++
   displayStats();
   resetCards();
+  shuffleCards()
   modalElement.classList.add("hidden");
 }
 
@@ -84,3 +108,41 @@ function resetCards() {
 }
 var resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", resetGame);
+
+function shuffleCards() {
+  for (var i = 0; i < cardClasses.length; i++) {
+    var randomPosition = Math.floor(Math.random() * cardClasses.length);
+    var placeHolder = cardClasses[i];
+    cardClasses[i] = cardClasses[randomPosition];
+    cardClasses[randomPosition] = placeHolder;
+  }
+  displayCards();
+}
+
+function displayCards() {
+  for (var i = 0; i < cardFrontClass.length; i++) {
+    cardFrontClass[i].className = "card-front" + " " + cardClasses[i];
+  }
+}
+
+function createCards() {
+  for (var i = 0; i < cardClasses.length; i++) {
+    var div = document.createElement("div");
+    div.classList.add("card", "col-2");
+
+    var cardFront = document.createElement("div");
+    cardFront.classList.add("card-front", cardClasses[i]);
+
+    var cardBack = document.createElement("div");
+    cardBack.classList.add("card-back");
+
+    div.append(cardFront, cardBack);
+    gameCards.append(div);
+  }
+}
+
+window.addEventListener("load", load);
+function load() {
+  createCards();
+  shuffleCards();
+}
