@@ -61,13 +61,17 @@ main {
   justify-content: space-between;
 }
 
+#gameCards {
+  width: 70%;
+}
+
 aside > div {
   width: 55%;
   margin: 4px;
   padding: 20px;
   background-color: #8aceea;
   text-align: center;
-  /* height: 40px; */
+  height: 40px;
 }
 
 .card {
@@ -127,40 +131,40 @@ aside > div {
   background-image: url(./assets/images/react-logo.png)
 }
 
-.column-1 {
+.col-1 {
   width: 8%;
 }
-.column-2 {
+.col-2 {
   width: 16%;
 }
-.column-3 {
+.col-3 {
   width: 24%;
 }
-.column-4 {
+.col-4 {
   width: 32%;
 }
-.column-5 {
+.col-5 {
   width: 40%;
 }
-.column-6 {
+.col-6 {
   width: 48%;
 }
-.column-7 {
+.col-7 {
   width: 56%;
 }
-.column-8 {
+.col-8 {
   width: 64%;
 }
-.column-9 {
+.col-9 {
   width: 72%;
 }
-.column-10 {
+.col-10 {
   width: 80%;
 }
-.column-11 {
+.col-11 {
   width: 88%;
 }
-.column-12 {
+.col-12 {
   width: 96%;
 }
 
