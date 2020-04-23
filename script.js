@@ -15,24 +15,24 @@ var attempts = 0;
 var gamesPlayed = 0;
 
 var cardClasses = [
-  "react-logo",
-  "css-logo",
-  "docker-logo",
-  "github-logo",
-  "html-logo",
-  "js-logo",
-  "mysql-logo",
-  "node-logo",
-  "php-logo",
-  "react-logo",
-  "css-logo",
-  "docker-logo",
-  "github-logo",
-  "html-logo",
-  "js-logo",
-  "mysql-logo",
-  "node-logo",
-  "php-logo",]
+  "earth-logo",
+  "jupiter-logo",
+  "mars-logo",
+  "mercury-logo",
+  "moon-logo",
+  "neptune-logo",
+  "saturn-logo",
+  "venus-logo",
+  "uranus-logo",
+  "earth-logo",
+  "jupiter-logo",
+  "mars-logo",
+  "mercury-logo",
+  "moon-logo",
+  "neptune-logo",
+  "saturn-logo",
+  "venus-logo",
+  "uranus-logo",]
 
 var cardFrontClass = document.getElementsByClassName("card-front");
 

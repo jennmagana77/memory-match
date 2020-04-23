@@ -1,1 +1,187 @@
+body {
+  background-image: url(./assets/images/rainbowspace.jpg);
+  background-size: cover;
+  height: 97vh;
+  background-repeat: no-repeat;
+}
 
+h1 {
+  color: white;
+  font-family: 'Audiowide';
+  font-size: 40px;
+  text-shadow: 2px 1px black;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+}
+
+.modal-content {
+  background-color: rgb(78, 163, 243);
+  text-align: center;
+  width: 25%;
+  padding: 50px;
+  border: solid 1px whitesmoke;
+  background-image: url(./assets/images/lostinspace.jpg);
+  font-family: 'Expletus Sans';
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#gameCards {
+  width: 70%;
+}
+
+aside > div {
+  width: 55%;
+  margin: 4px;
+  padding: 20px;
+  background-color: rgb(230, 120, 195);
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Audiowide';
+  border: solid 3px white;
+  opacity: .7;
+}
+
+button {
+  padding: 10px;
+  font-size: 3rem;
+  background: none;
+  border: solid 5px white;
+  font-family: 'Expletus Sans';
+}
+
+.card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+  position: relative;
+}
+
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  border: solid 1px whitesmoke;
+  border-radius: 2px;
+}
+
+.card-back {
+  border: solid 2px black;
+}
+
+.card-back {
+  background-image: url(./assets/images/nebula3.jpg)
+}
+
+.earth-logo {
+  background-image: url(./assets/images/earth.jpg)
+}
+
+.jupiter-logo {
+  background-image: url(./assets/images/jupiter.jpg)
+}
+
+.mars-logo {
+  background-image: url(./assets/images/mars.jpg)
+}
+
+.mercury-logo {
+  background-image: url(./assets/images/mercury.jpg)
+}
+
+.moon-logo {
+  background-image: url(./assets/images/moon.jpg)
+}
+
+.neptune-logo {
+  background-image: url(./assets/images/neptune.jpg)
+}
+
+.saturn-logo {
+  background-image: url(./assets/images/saturn.jpg)
+}
+
+.venus-logo {
+  background-image: url(./assets/images/venus.png)
+}
+
+.uranus-logo {
+  background-image: url(./assets/images/uranus.jpg)
+}
+
+.col-1 {
+  width: 8%;
+}
+.col-2 {
+  width: 16%;
+}
+.col-3 {
+  width: 24%;
+}
+.col-4 {
+  width: 32%;
+}
+.col-5 {
+  width: 40%;
+}
+.col-6 {
+  width: 48%;
+}
+.col-7 {
+  width: 56%;
+}
+.col-8 {
+  width: 64%;
+}
+.col-9 {
+  width: 72%;
+}
+.col-10 {
+  width: 80%;
+}
+.col-11 {
+  width: 88%;
+}
+.col-12 {
+  width: 96%;
+}
+
+.hidden {
+  display: none;
+}
