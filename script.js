@@ -62,7 +62,7 @@ function handleClick(event) {
         modalElement.classList.remove("hidden");
       }
     } else {
-      setTimeout(hideCards, 1500);
+      setTimeout(hideCards, 1200);
       attempts++;
       displayStats();
     }
